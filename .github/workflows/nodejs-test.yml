@@ -5,6 +5,8 @@ jobs:
     name: Test Node job
     runs-on: ubuntu-latest
     steps:
+    - name: Prepare package.json
+      run: npm init -y
     - name: Use Node.js 20.x
       uses: actions/setup-node@v3
       with:
