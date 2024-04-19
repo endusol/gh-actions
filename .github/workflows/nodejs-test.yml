@@ -5,7 +5,7 @@ jobs:
     name: Test Node job
     runs-on: ubuntu-latest
     steps:
-    - name: Prepare package.json
+    - name: Generate package.json and the lock file
       run: npm init -y & npm install
     - name: Use Node.js 20.x
       uses: actions/setup-node@v3
