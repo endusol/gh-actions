@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Prepare package.json
-      run: npm init -y
+      run: npm init -y & npm install
     - name: Use Node.js 20.x
       uses: actions/setup-node@v3
       with:
